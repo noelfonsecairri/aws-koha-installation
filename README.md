@@ -10,10 +10,10 @@ Koha Installation to AWS instance
 * Add tags
 * Turn on the following for the Security Group Settings:
 
-* SSH; port 22 - default / turned on; Source: Anywhere
-* HTTP; port 80; Source: Anywhere
-* HTTPS; port 443; Source: Anywhere
-* Custom TCP Rule: port 8080; Source: Anywhere
+  * SSH; port 22 - default / turned on; Source: Anywhere
+  * HTTP; port 80; Source: Anywhere
+  * HTTPS; port 443; Source: Anywhere
+  * Custom TCP Rule: port 8080; Source: Anywhere
 
 * Generate a key-pair to connect (SSH) to the instance
 * Once connected, open the terminal and activate super user (sudo su)
