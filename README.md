@@ -1,7 +1,7 @@
 # aws-koha-installation
 Koha Installation to AWS instance
 
-Phase 1: setup AWS instance:
+Phase 1 **bold**: setup AWS instance:
 -Launch an instance in the AWS EC2 dashboard
 -Under Community AMIs, select ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20190514 - ami-07b4156579ea1d7ba
 -Use t2 micro for instance type
@@ -17,5 +17,5 @@ Phase 1: setup AWS instance:
 -Generate a key-pair to connect (SSH) to the instance
 Once connected, open the terminal and activate super user (sudo su)
 
-Phase 2: Install Koha from Terminal (refer to Koha on Ubuntu wiki)
+Phase 2 **bold**: Install Koha from Terminal (refer to Koha on Ubuntu wiki)
 
