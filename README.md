@@ -19,3 +19,4 @@ Once connected, open the terminal and activate super user (sudo su)
 
 **Phase 2**: Install Koha from Terminal (refer to Koha on Ubuntu wiki)
 
+
