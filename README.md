@@ -28,6 +28,7 @@ Koha Installation to AWS instance
 * Once running, select the instance and click the "connect" button to see how to connect via SSH
 ![launch instance](../assets/010_connect_to_instance.png)
 * Once connected, open the terminal and activate super user (sudo su)
+![launch instance](../assets/011_connect_to_ubuntu.png)
 
 **Phase 2**: Install Koha from Terminal (refer to [Koha on Ubuntu wiki!](https://wiki.koha-community.org/wiki/Koha_on_ubuntu_-_packages#Pre-Installation_Setup))
 
@@ -40,5 +41,10 @@ Koha Installation to AWS instance
 	* sudo apt-get clean
 * Install Koha:
 	* sudo apt-get install koha-common
+* modify some settings in the koha-site file:
+	* Replace the current domain with empty quotes ""
+	* Set Intraport to 8080
+	* Set Opacport to 80
+	* ![launch instance](../assets/012_modify_koha_sites.png)
 
 
