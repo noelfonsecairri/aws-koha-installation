@@ -25,9 +25,20 @@ Koha Installation to AWS instance
 
 * Generate a key-pair to connect (SSH) to the instance
 ![launch instance](../assets/009_key_pair.png)
+* Once running, select the instance and click the "connect" button to see how to connect via SSH
+![launch instance](../assets/010_connect_to_instance.png)
 * Once connected, open the terminal and activate super user (sudo su)
 
 **Phase 2**: Install Koha from Terminal (refer to [Koha on Ubuntu wiki!](https://wiki.koha-community.org/wiki/Koha_on_ubuntu_-_packages#Pre-Installation_Setup))
 
-asdasd
+* Add a Koha Community Repository. Type:
+	* echo deb http://debian.koha-community.org/koha stable main | sudo tee /etc/apt/sources.list.d/koha.list
+wget -O- http://debian.koha-community.org/koha/gpg.asc | sudo apt-key add -
+* Make sure that Ubunti is updated:
+	* sudo apt-get update
+	* sudo apt-get upgrad
+	* sudo apt-get clean
+* Install Koha:
+	* sudo apt-get install koha-common
+
 
