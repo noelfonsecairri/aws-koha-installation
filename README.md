@@ -2,7 +2,6 @@
 Koha Installation to AWS instance
 
 **Phase 1** : setup AWS instance:
-<<<<<<< HEAD
 * Launch an instance in the AWS EC2 dashboard:
 ![launch instance](../assets/001_create_instance.png)
 * Under Community AMIs, select ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20190514 - ami-07b4156579ea1d7ba
@@ -15,14 +14,6 @@ Koha Installation to AWS instance
 ![launch instance](../assets/006_add_storage.png)
 * Add tags
 ![launch instance](../assets/007_add_tag.png)
-=======
-* Launch an instance in the AWS EC2 dashboard
-* Under Community AMIs, select ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20190514 - ami-07b4156579ea1d7ba
-* Use t2 micro for instance type
-* Use default instance settings
-* Use default storage settings
-* Add tags
->>>>>>> d516a40c22e8d776052edad94e1b5482568b3977
 * Turn on the following for the Security Group Settings:
 
   * SSH; port 22 - default / turned on; Source: Anywhere
@@ -30,7 +21,6 @@ Koha Installation to AWS instance
   * HTTPS; port 443; Source: Anywhere
   * Custom TCP Rule: port 8080; Source: Anywhere
 
-<<<<<<< HEAD
 ![launch instance](../assets/008_security_groups.png)
 
 * Generate a key-pair to connect (SSH) to the instance
@@ -41,12 +31,3 @@ Koha Installation to AWS instance
 
 asd
 
-=======
-* Generate a key-pair to connect (SSH) to the instance
-* Once connected, open the terminal and activate super user (sudo su)
-
-**Phase 2**: Install Koha from Terminal (refer to Koha on Ubuntu wiki)
-
-
-asdasd
->>>>>>> d516a40c22e8d776052edad94e1b5482568b3977
