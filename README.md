@@ -33,7 +33,7 @@ Koha Installation to AWS instance
 
 * Add a Koha Community Repository. Type:
 	* echo deb http://debian.koha-community.org/koha stable main | sudo tee /etc/apt/sources.list.d/koha.list
-wget -O- http://debian.koha-community.org/koha/gpg.asc | sudo apt-key add -
+	* wget -O- http://debian.koha-community.org/koha/gpg.asc | sudo apt-key add -
 * Make sure that Ubunti is updated:
 	* sudo apt-get update
 	* sudo apt-get upgrad
