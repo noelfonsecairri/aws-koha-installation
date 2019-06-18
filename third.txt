@@ -1,7 +1,0 @@
-this is a random third file
-asd
-asdasd
-<<<<<<< HEAD
-=======
-xcvxcvxcvxc
->>>>>>> d516a40c22e8d776052edad94e1b5482568b3977
