@@ -53,7 +53,7 @@ Koha Installation to AWS instance
 	* sudo a2enmod cgi 
 	* sudo service apache2 restart
 	* test edit
-	* test edit 2
+	* test edit 2 again
 
 
 
