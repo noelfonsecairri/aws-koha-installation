@@ -67,4 +67,4 @@ Koha Installation to AWS instance
 * Edit the apache ports
 	* go to directory **/etc/apache2**
 	* edit the ports configuration file, enter: nano ports.conf
-		*  ![test](](../assets/011_connect_to_ubuntu.png)
+		*  ![test](../assets/011_connect_to_ubuntu.png)
