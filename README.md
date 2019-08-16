@@ -5,15 +5,15 @@ Koha Installation to AWS instance
 * Launch an instance in the AWS EC2 dashboard:
 ![launch instance](../assets/001_create_instance.png)
 * Under Community AMIs, select ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20190514 - ami-07b4156579ea1d7ba
-![launch instance](../assets/003_ubuntu_1604.png)
+![Select operating system](../assets/003_ubuntu_1604.png "Ubuntu 16.04")
 * Use t2 micro for instance type
-![launch instance](../assets/004_t2_micro.png)
+![instance type](../assets/004_t2_micro.png "Select the instance type")
 * Use default instance settings
-![launch instance](../assets/005_configure_instance_settings.png)
+![instance settings](../assets/005_configure_instance_settings.png "Configure the instance settings")
 * Use default storage settings
-![launch instance](../assets/006_add_storage.png)
+![add storage](../assets/006_add_storage.png "add storage")
 * Add tags
-![launch instance](../assets/007_add_tag.png)
+![add tag](../assets/007_add_tag.png "add tag")
 * Select the following inbound rules for the Security Group Settings:
 
   * SSH; port 22 - default / turned on; Source: Anywhere
@@ -21,14 +21,14 @@ Koha Installation to AWS instance
   * HTTPS; port 443; Source: Anywhere
   * Custom TCP Rule: port 8080; Source: Anywhere
 
-![launch instance](../assets/008_security_groups.png)
+![security groups](../assets/008_security_groups.png "add the security groups")
 
 * Generate a key-pair to connect (SSH) to the instance
-![launch instance](../assets/009_key_pair.png)
+![key pair](../assets/009_key_pair.png "key pair")
 * Once running, select the instance and click the "connect" button to see how to connect via SSH
-![launch instance](../assets/010_connect_to_instance.png)
+![SSH](../assets/010_connect_to_instance.png "SSH to instance")
 * Once connected, open the terminal and activate super user (sudo su)
-![launch instance](../assets/011_connect_to_ubuntu.png)
+![ubuntu](../assets/011_connect_to_ubuntu.png "Ubuntu")
 
 **Phase 2**: Install Koha from Terminal (refer to [Koha on Ubuntu wiki!](https://wiki.koha-community.org/wiki/Koha_on_ubuntu_-_packages#Pre-Installation_Setup))
 
@@ -67,4 +67,5 @@ Koha Installation to AWS instance
 * Edit the apache ports
 	* go to directory **/etc/apache2**
 	* edit the ports configuration file, enter: nano ports.conf
-		*  ![alt text](../assets/011_connect_to_ubuntu.png "hello world!")
+		*  ![ports config](../assets/013_ports_config.png "ports config 8080")
+		*  add Listen 8080 after Listen 80. This will allow access to port 8080 specified in the security groups.
