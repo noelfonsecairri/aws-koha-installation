@@ -46,5 +46,13 @@ Koha Installation to AWS instance
 	* Set Intraport to 8080
 	* Set Opacport to 80
 	* ![launch instance](../assets/012_modify_koha_sites.png)
+* Install MySQL Server
+	* sudo apt-get install mysql-server
+* Enable Apache
+	* sudo a2enmod rewrite 
+	* sudo a2enmod cgi 
+	* sudo service apache2 restart
+	* test edit
+
 
 
