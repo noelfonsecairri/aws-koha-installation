@@ -14,7 +14,7 @@ Koha Installation to AWS instance
 ![launch instance](../assets/006_add_storage.png)
 * Add tags
 ![launch instance](../assets/007_add_tag.png)
-* Turn on the following for the Security Group Settings:
+* Select the following inbound rules for the Security Group Settings:
 
   * SSH; port 22 - default / turned on; Source: Anywhere
   * HTTP; port 80; Source: Anywhere
@@ -35,7 +35,7 @@ Koha Installation to AWS instance
 * Add a Koha Community Repository. Type:
 	* echo deb http://debian.koha-community.org/koha stable main | sudo tee /etc/apt/sources.list.d/koha.list
 	* wget -O- http://debian.koha-community.org/koha/gpg.asc | sudo apt-key add -
-* Make sure that Ubunti is updated:
+* Make sure that Ubuntu is updated:
 	* sudo apt-get update
 	* sudo apt-get upgrad
 	* sudo apt-get clean
@@ -48,12 +48,23 @@ Koha Installation to AWS instance
 	* ![launch instance](../assets/012_modify_koha_sites.png)
 * Install MySQL Server
 	* sudo apt-get install mysql-server
-* Enable Apache
+* Enable Apache modules
 	* sudo a2enmod rewrite 
 	* sudo a2enmod cgi 
 	* sudo service apache2 restart
-	* test edit
-	* test edit 2 again
-
-
-
+* Create a **Koha instance**
+	* **sudo koha-create --create-db library**
+	* where library is the name of the koha instance
+	* this will be the database to be used in MySQL
+* Install MySQL
+	* sudo **mysql_secure_installation**
+	* You will be prompted with the following:
+		* Change the root password? [Y/n] n
+		* Remove anonymous users? [Y/n] n
+		* Disallow root login remotely? [Y/n] n
+		* Remove test database and access to it? [Y/n] y
+		* Reload privilege tables now? [Y/n] y
+* Edit the apache ports
+	* go to directory **/etc/apache2**
+	* edit the ports configuration file, enter: nano ports.conf
+		*  ![test](](../assets/011_connect_to_ubuntu.png)
