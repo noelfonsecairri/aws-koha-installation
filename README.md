@@ -69,3 +69,11 @@ Koha Installation to AWS instance
 	* edit the ports configuration file, enter: nano ports.conf
 		*  ![ports config](../assets/013_ports_config.png "ports config 8080")
 		*  add Listen 8080 after Listen 80. This will allow access to port 8080 specified in the security groups.
+* At this point, Koha should be installed and the EC2 IPV4 address should be accessible.
+	* The Koha system maintenance screen should appear.
+	![Koha system maintenance screen](../assets/014_system_maintenance.png)
+	* In addition, adding the :8080 at the end of the IPV4 address will show the **Koha administrator Login page**.
+	![Koha admin login screen](../assets/015_koha_admin_login.png)
+	* Since this is a database replication and not a fresh Koha installation, we will not need the username and password credentials for the Koha administrator login page. We may now proceed with the data migration.
+
+**Phase 4**: Move an old Koha database instance to a new installation.
