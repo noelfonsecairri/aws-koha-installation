@@ -1,6 +1,15 @@
+##### Table of Contents  
+[Headers](#headers)  
+[Phase1](#phase1)
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+## Headers
+
 # aws-koha-installation
 Koha Installation to AWS instance
 
+<a name="phase1"/>
 **Phase 1** : setup AWS instance:
 
 * Launch an instance in the AWS EC2 dashboard:
@@ -146,11 +155,3 @@ Koha Installation to AWS instance
 	* This may take a couple of minutes to take effect.
 	![exporting files](../assets/017_exporting_database_files.png)
 	![exporting files done](../assets/018_exporting_database_done.png)
-
-
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-## Headers
