@@ -1,6 +1,6 @@
 ##### Table of Contents: AWS-Koha Installation  
 * [Phase1: setup AWS instance](#phase1)
-..[Launching an instance in the AWS EC2 dashboard](#launchinstance)
+	* [Launching an instance in the AWS EC2 dashboard](#launchinstance)
 
 
 # aws-koha-installation
