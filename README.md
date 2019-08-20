@@ -1,17 +1,16 @@
 ##### Table of Contents  
-[Headers](#headers)  
 [Phase1](#phase1)
 
 
-<a name="headers"/>
+<a name="headers">
 ## Headers
 
 # aws-koha-installation
+
 Koha Installation to AWS instance
 
-<a name="phase1"/>
 
-##Phase 1 : setup AWS instance:
+# phase1**Phase 1** : setup AWS instance:
 
 * Launch an instance in the AWS EC2 dashboard:
 ![launch instance](../assets/001_create_instance.png)
