@@ -39,7 +39,7 @@ Koha Installation to AWS instance
 
 	* Go to the Terminal or the Command Prompt, and change the current working directory to where you previously saved the keypair file.
 	* type: chmod 400 keypair.pem, and hit return.
-	* sequently type: ssh -i "keypair.pem" ubuntu@(public DNS address)
+	* subsequently type: ssh -i "keypair.pem" ubuntu@(public DNS address)
 	* ssh -i "keypair.pem" ubuntu@ec2-54-88-132-7.compute-1.amazonaws.com
 	* this will connect you to the EC2 server.
 ![SSH](../assets/010_connect_to_instance.png "SSH to instance")
