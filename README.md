@@ -78,7 +78,7 @@ Koha Installation to AWS instance
 * Create a **Koha instance**
 	* **sudo koha-create --create-db library**
 	* where library is the name of the koha instance
-	* this will be the database to be used in MySQL.
+	* this will be the database name to be used in MySQL.
 		* **Note**: Koha will attach "koha_" as prefix of your library name and that will be the name of the MySQL database instance.
 
 * Install MySQL
@@ -146,3 +146,11 @@ Koha Installation to AWS instance
 	* This may take a couple of minutes to take effect.
 	![exporting files](../assets/017_exporting_database_files.png)
 	![exporting files done](../assets/018_exporting_database_done.png)
+
+
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+## Headers
